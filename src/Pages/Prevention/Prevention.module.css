@@ -1,0 +1,183 @@
+.Prevention {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/preventback.jpg");
+
+  background-size: cover;
+  height: 100vh;
+}
+
+.heading {
+  text-align: center;
+}
+
+.headingMain {
+  padding-top: 2rem;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #cf0075;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.headingPrimary {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-top: -1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 6rem;
+}
+
+.cardItem {
+  color: white;
+  flex: 0 0 17%;
+  height: 6rem;
+  width: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-overflow: clip;
+  border-radius: 1rem;
+  transition: all 0.1s ease-in;
+}
+
+
+.cardItem p{
+    margin-top: -.8rem;
+}
+
+.cardItem:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.cardItem:hover h3 {
+  color: #cf0075;
+}
+
+.cardItem p {
+  font-size: 0.9rem;
+}
+
+img {
+  height: 3rem;
+
+}
+
+.SymptomsHeading{
+  letter-spacing: .1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #cf0075;
+  text-align: center;
+}
+
+.Sym{
+  display: grid;
+  /* grid-template-columns: 20rem 30rem 30rem 20rem; */
+  grid-template-columns:  1fr 1fr;
+  gap: .6rem;
+  padding: 2rem 15rem;
+}
+
+.dont{
+  background-color: #d5384d;
+  padding:.3rem 2rem;
+  border-radius: .5rem;
+  color: white;
+  transition: all .2s;
+}
+
+.dos{
+  background-color: #1ab0d3;
+  padding:.3rem 2rem;
+  border-radius: .5rem;
+  color: white;
+  transition: all .2s;
+}
+
+.Sym h4{
+  margin-bottom: -.5rem;
+}
+
+.Sym p{
+  font-size: .8rem;
+}
+
+.dos:hover{
+  transform: translateY(-.2rem);
+}
+
+.dont:hover{
+  transform: translateY(-.2rem);
+}
+
+.dosHeading{
+  display: flex;
+}
+
+.dosHeading h3{
+  margin-left: 21rem;
+  margin-bottom: -.8rem;
+}
+
+@media screen and (max-width:500px){
+  .Prevention{
+    height: 160vh;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 6rem;
+  }
+
+  .cardItem {
+    height: 10rem;
+    width: 3rem;
+    transition: all 0.15s ease-in;
+  }
+
+  .cardItem p {
+    margin:-2rem
+  }
+  .cardItem h3{
+    margin:2.3rem -2rem;
+    margin-top: 1rem;
+  }
+  .high{
+    background-color: white;
+  color: black;
+  }
+  .cardItem:hover {
+    background-color: white;
+    color: black;
+    transform: scale(0.8);
+  }
+
+  .Sym{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: .6rem;
+    padding: 2rem 1rem;
+  }
+
+  .dosHeading h3{
+    margin-left: 2rem;
+    margin-bottom: -.8rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:390px){
+  .Prevention{
+    height: 177vh;
+  }
+}

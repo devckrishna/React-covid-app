@@ -1,0 +1,74 @@
+.mainItem {
+  height: 10rem;
+  width: 20rem;
+  margin: 2.3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+}
+
+@media screen and (max-width: 500px) {
+  .mainItem {
+    height: 6rem;
+    width: 5.6rem;
+    margin: 1rem 0.3rem;
+  }
+
+  .Inc {
+    font-size: .9rem;
+    font-weight: 700;
+  }
+  .Total{
+    font-size: 1.1rem;
+  }
+  .typeName{
+    font-size: .6rem;
+  }
+}
+
+.mainItem:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 500px) {
+  .Inc {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .Total {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .typeName {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.Confirmed {
+  background-color: #ffdbdb;
+  color: red;
+}
+
+.Active {
+  background-color: #d4dbf2;
+  color: blue;
+}
+
+.Deceased {
+  background-color: #eaeaea;
+  color: grey;
+}
+
+.Recovered {
+  background-color: #def8e8;
+  color: green;
+}

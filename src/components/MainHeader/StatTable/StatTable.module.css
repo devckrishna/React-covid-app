@@ -1,0 +1,100 @@
+.mainTable {
+  padding-top: 10rem;
+  background-color: #f4f4f4;
+  padding-bottom: 4rem;
+}
+.StatTable {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.1s;
+}
+
+.StatTable:hover {
+  transform: translateY(0.2rem) scaleY(1.05);
+}
+
+@media screen and (max-width: 500px) {
+    .mainTable{
+        padding-top: 12rem;
+    }
+  .state {
+    padding-left: 1.4rem;
+    margin-right: .9rem;
+  }
+  .StatTable{
+      font-size: .8rem;
+  }
+}
+
+
+
+
+.StatDiv {
+  flex: 1 0 ;
+  margin-bottom: 1.5rem;
+  padding: 0.3 0rem;
+}
+
+/* .StatDiv:hover{
+    transform: scale(1.1);
+} */
+
+@media screen and (min-width: 500px) {
+  .state {
+    padding-top: 0.5rem;
+    padding-left: 12rem;
+  }
+}
+@media screen and (min-width:600px){
+  .state{
+   padding-left: 9rem;
+  }
+}
+.state:first-child {
+  padding-top: 0;
+}
+
+.StatHeader {
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.Confirmed {
+  color: #a30606;
+}
+
+.Active {
+  color: #0d146c;
+}
+
+.Recovered {
+  color: #234e18;
+}
+
+.Deaths {
+  color: grey;
+}
+
+.delta {
+  display: block;
+  margin-top: -0.6rem;
+  
+}
+
+.deltaIncC {
+  color: red;
+  font-weight: 900;
+}
+
+.deltaIncR {
+  color: green;
+  font-weight: 900;
+}
+
+.deltaIncD {
+  color: black;
+  font-weight: 900;
+}
+

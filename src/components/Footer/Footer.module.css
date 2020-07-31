@@ -1,0 +1,67 @@
+.Footer{
+    height: 6rem;
+    width: 100%;
+    background-color: #0B1966;
+    display: flex;
+    position: relative;
+}
+
+.nameTag{
+    color: white;
+    font-size: .7rem;
+    letter-spacing: .2rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    padding-top: .5rem;
+    border-top: .1px solid white
+}
+
+@media screen and (max-width:500px){
+    .nameTag{
+        font-size: .5rem;
+        letter-spacing: .1rem;
+    }
+}
+
+.git{
+    height: 1.3rem;
+    width: auto;
+    position: absolute;
+    top: 3.5rem;
+    right:4rem;
+    transition: all .1s;
+}
+
+.git:hover{
+    transform: scale(1.1);
+    filter: brightness(-10);
+}
+
+.mail{
+    height: 1.3rem;
+    width: auto;
+    position: absolute;
+    top: 3.5rem;
+    right:7rem;
+    transition: all .1s;
+}
+
+.mail:hover{
+    filter: brightness(2);
+    transform: scale(1.1);
+}
+
+.linkedin{
+    height: 1.3rem;
+    width: auto;
+    position: absolute;
+    top: 3.5rem;
+    right:10rem;
+    transition: all .1s;
+}
+
+.linkedin:hover{
+    filter: brightness(2);
+    transform: scale(1.1);
+}

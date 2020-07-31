@@ -1,0 +1,66 @@
+.mainImage {
+  height: 50rem;
+  background: url("../../images/header.png");
+  position: relative;
+  background-repeat: no-repeat;
+  margin-bottom: -19rem;
+}
+
+.MainHeader {
+  display: flex;
+  position: absolute;
+  top: 27rem;
+  left: 10rem;
+  width: 68rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 0.6rem;
+  margin-bottom: -29rem;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 2.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 10px 80px rgba(0, 0, 0, 0.12);
+}
+
+.statContainer {
+  height: 12rem;
+  width: 15rem;
+  background-color: red;
+  /* margin: -20rem 2rem; */
+}
+@media screen and (max-width:500px){
+  .MainHeader{
+    height: 8rem;
+    width: 25rem;
+    top: 12rem;
+    left:0.15rem;
+    padding:.2rem
+  }
+  .mainImage{
+    height: 20rem;
+    width: auto;
+    background-size: contain;
+  }
+  
+}
+
+@media screen and (min-width:600px) and (max-width:1200px){
+  .MainHeader{
+    left: 2rem;
+    width: 60rem;
+  }
+}
+
+
+@media screen and (max-width:400px){
+  .MainHeader{
+    width: 22.7rem;
+  }
+}
+
+@media screen and (max-width:365px){
+  .MainHeader{
+    width: 21.9rem;
+  }
+}
+
